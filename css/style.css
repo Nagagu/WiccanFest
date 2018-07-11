@@ -1,0 +1,511 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+
+	background: url("../img/starsazul.jpg") no-repeat fixed center bottom / cover;
+	font-family: 'Vollkorn SC', serif;
+	font-size: 0.8em;
+
+}
+
+a{
+	text-decoration: none;
+	font-family: 'Aladin', cursive;
+}
+
+p{
+	font-size: 1.5em;
+	margin: 0px 20px auto;
+	text-align: justify;
+	color:white;
+}
+
+
+
+h1{
+	color:white;
+
+}
+
+h2{
+	padding-bottom: 60px;
+	padding-top: 100px;
+	text-align: left;
+	margin-left: 10%;
+	color:white;
+	font-size: 2em;
+}
+
+h3{
+	color:white;
+	font-family: 'Aladin', cursive;
+	font-size: 3em;
+	padding: 17px;
+}
+
+span{
+
+	font-family: 'Aladin', cursive;
+	font-size:2em;
+}
+
+small div{
+
+	font-family: "arial", sans-serif;
+	text-align: center;
+	float:right;
+	padding-right: 42%;
+	font-size: 13px;
+
+}
+
+.imgbrujas{
+
+	width: 100%;
+}
+
+.boton {
+    display: block;
+    padding: 7px 0;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    margin: 54px auto;
+    width: 195px;
+    text-align: center;
+    font-family: 'Aladin', cursive;
+    cursor: pointer;
+}
+
+/* ------------------ PANTALLA DE CARGA ------------------*/
+
+
+
+.overlay{position:fixed;width:100%;height:100%;top:0;left:0; z-index:999; background:url("../img/starsnegro.jpg") no-repeat fixed center bottom / cover;}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin: 200px auto;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 0;
+  text-transform: uppercase;
+}
+
+.loader:before,
+.loader:after {
+  opacity: 0;
+  box-sizing: border-box;
+  content: "\0020";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 50px #fff, inset 0 0 50px #fff;
+}
+
+.loader:after {
+  z-index: 1;
+  -webkit-animation: gogoloader 2s infinite 1s;
+}
+
+.loader:before {
+  z-index: 2;
+  -webkit-animation: gogoloader 2s infinite;
+}
+
+@-webkit-keyframes gogoloader {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+
+/*------------------------------------------------------
+BARRA DE NAVEGACIÓN
+------------------------------------------------------*/
+
+nav {
+	width: 100%;
+	height: 60px;	
+	background: black;
+	position:fixed;
+	z-index: 9999;
+	transition: all .6s;
+}
+
+nav ul {
+	float: left;
+	margin-left: 40px;
+}
+
+nav li {
+	display: inline-block;	
+	letter-spacing: 2px;	
+	text-transform: uppercase;
+}
+
+nav a {
+    display: block;
+    color: white;
+    line-height: 60px;
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+nav div{
+	color:white;
+	display: block;
+	float:right;
+	margin-right: 20px;
+	margin-right: 32px;
+	padding-top: 17px;
+	font-family: 'Ruthie', cursive;
+	font-size: 2em;
+
+}
+
+.menu.oculto{
+
+	transform: translateY(-100%);
+
+}
+/* ------------------ SECCIÓN HERO ------------------*/
+
+.hero {
+    height: 100vh;
+    background: rgba(0,0,0,0) url("../img/blue-aurora.jpg") no-repeat fixed center bottom / cover;
+}
+
+.hero img {
+    width: 250px;
+    margin: 0 auto 180px;
+    display: block;
+    padding-top: 130px;
+
+}
+
+.letras{
+
+	text-align: center;
+	font-family: 'Ruthie', cursive;
+	color:white;
+	font-size: 4em;
+    padding-top: 138px;
+}
+
+#izq{
+
+	margin-left: 64px;
+}
+
+#dcha{
+
+	    margin-right: 143px;
+	    
+}
+
+
+
+/* ------------------ SECCIÓN ACTIVIDADES ------------------*/
+.relative{
+
+	position: relative;
+}
+
+.actividades{
+
+	text-align: center;
+	background-color: #0a2838;
+	background: url("../img/starsazul2.jpg") no-repeat center bottom / cover; 
+
+}
+
+#penta{
+
+	width: 100%;
+}
+
+/* ------------------ SECCIÓN BRUJAS ------------------*/
+
+.brujas{
+
+	padding-top: 0px;
+	padding-bottom: 120px;
+	text-align: center;
+	background-color: #0a2838;
+	background: url("../img/bolas.jpg") no-repeat fixed center bottom / cover; 
+}
+
+#DessumiissN{
+
+	position: absolute;
+	
+}
+
+#LorelaiN{
+
+	position: absolute;
+	
+}
+
+#HannaN{
+
+	position: absolute;
+	
+
+}
+
+#DessumiissN:hover{
+
+	opacity: 0;
+	transition: 1s;
+}
+
+#LorelaiN:hover{
+
+	opacity: 0;
+	transition: 1s;
+}
+
+#HannaN:hover{
+
+	opacity: 0;
+	transition: 1s;
+
+}
+
+ .brujas p{
+
+	color:white;
+	font-size: 14px;
+}
+
+/* ------------------ SECCIÓN MAPA ------------------*/
+
+#mapa{
+
+	width: 100%;
+}
+
+#consejos li{
+
+	font-size: 2em;
+	margin: 36px 90px;
+    transition: all 3s;
+}
+
+.invisibles li{
+
+	opacity: 0;
+}
+
+#consejos img{
+
+	width: 34px;
+	margin: 0px 10px;
+}
+
+.mapa{
+
+	background-color: #c99358;
+	background-image: linear-gradient(0deg, #c99358 0%, #a4659a 33%, #180420 100%);
+
+	/*background: #65622d;*/
+	padding-bottom: 140px;
+}
+
+.flechas img{
+
+	width: 100%;
+	margin-top: 54px;
+}
+.interactivo p{
+
+	font-size: 1.2em;
+	padding-top: 20px;
+	margin-left: 0px;
+}
+
+.fondoModal {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.85);
+	display: none;
+	z-index: 99999;
+}
+
+.ventanaModal {
+
+	height: 88%;
+	width: 85%;
+	border-radius: 15px;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url('../img/papel.jpg') no-repeat center / cover;
+	display: none;
+
+}
+
+#consejos ul{
+
+	font-family: 'Aladin', cursive;
+	padding-top: 25px;
+}
+
+#consejos .botonModal{
+
+	float: right;
+	background: #b9ac1d4d;
+	font-family: 'Aladin', cursive;
+	font-size: 2em;
+	border: 2px solid;
+	padding: 5px 30px;
+	margin-right: 25px;
+
+
+}
+
+/* ------------------ SECCIÓN FORMULARIO ------------------*/
+
+#contacto {
+    
+    background: url("../img/velas.jpg") no-repeat fixed center / cover;
+}
+
+#contacto * {
+    color: white;
+}
+
+#contacto textarea {
+    height: 200px
+}
+
+#contacto input:not(.boton), #contacto textarea {
+	width: 100%;
+	margin-top: 25px;
+	padding: 5px 20px 20px 14px;
+	text-transform: uppercase;
+	font-family: 'Aladin', cursive;
+	font-size: 1.5em;
+	font-weight: 241;
+	line-height: 1em;
+	color: white;
+	background: #02051499;
+	border: none;
+	
+}
+
+#contacto .boton {
+    float: left;
+    margin-top: 60px;
+    background: black;
+    font-family: 'Aladin', cursive;
+    font-size: 1.2em;
+
+}
+
+/* ------------------ FOOTER ------------------*/
+
+footer{
+
+	padding:70px;
+	background: black;
+}
+
+small{
+
+	color:white;
+}
+
+/*-----------------------------------*/
+
+@media screen and (max-width: 1000px) {
+
+.hero img {
+width: 150px;
+margin: 0 auto 180px;
+display: block;
+padding-top: 130px;
+}
+
+.letras{
+
+text-align: center;
+font-family: 'Ruthie', cursive;
+color:white;
+font-size: 2em;
+padding-top: 138px;
+}
+
+#izq{
+
+	margin-left: 40px;
+}
+
+#dcha{
+
+	    margin-right:90px;
+	    
+}
+
+.interactivo p{
+
+	padding-bottom: 20px;
+}
+
+.logoWiccan{
+
+	display: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+.ventanaModal {
+
+	height: 88%;
+	width: 60%;
+	border-radius: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url('../img/papel.jpg') no-repeat center / cover;
+	display: none;
+}
+
+#consejos li{
+
+	font-size: 18px;
+	margin: 36px 90px;
+    transition: all 3s;
+}
+
+#consejos img {
+    width: 18px;
+    margin: 0px 10px;
+  }
+}
